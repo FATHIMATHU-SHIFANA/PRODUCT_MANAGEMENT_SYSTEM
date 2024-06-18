@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #ffffff; /* White */
+  --background-color: #f0f2f5; /* Light Grey */
+  --input-background-color: #e9ecef; /* Input Grey */
+  --button-hover-color: #45a049; /* Darker Green */
+  --text-color: #333333; /* Dark Grey */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow Color */
+  --input-focus-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Input Focus Shadow */
+}
+
+.create-product-container {
+  margin-top: 30px !important;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--input-focus-shadow);
+  padding: 15px;
+}
+
+.page-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.form-control {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+@media (max-width: 1000px) {
+  .create-product-container {
+    max-width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .create-product-container {
+    max-width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .create-product-container {
+    max-width: 270px;
+  }
+}

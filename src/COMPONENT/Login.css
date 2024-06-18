@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #ffffff; /* White */
+  --background-color: #f0f2f5; /* Light Grey */
+  --input-background-color: #e9ecef; /* Input Grey */
+  --button-hover-color: #45a049; /* Darker Green */
+  --text-color: #333333; /* Dark Grey */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow Color */
+  --input-focus-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Input Focus Shadow */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c3e4c1, #a0c1b8); 
+}
+
+.sub {
+  background: var(--secondary-color);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.sub h1 {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.form {
+  width: 100%;
+}
+
+.inp {
+  margin-bottom: 20px;
+}
+
+.inputField, .inputIcon {
+  height: 45px; 
+  border: 1px solid #ccc;
+}
+
+.inputField {
+  border-radius: 0 5px 5px 0;
+  background-color: var(--input-background-color);
+  color: var(--text-color);
+  padding: 10px;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputField:focus, .inputField:hover {
+  background-color: #fff;
+  border-color: var(--primary-color);
+  box-shadow: var(--input-focus-shadow);
+}
+
+.inputIcon {
+  background: var(--input-background-color);
+  border-radius: 5px 0 0 5px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px; 
+}
+
+.check {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me .form-check-input {
+  margin-right: 10px;
+  background-color: #fff; 
+}
+
+.remember-me .form-check-input:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.remember-me .form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.remember-me .form-check-input:checked:focus {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.remember-me .form-check-input:checked:active,
+.remember-me .form-check-input:checked:focus,
+.remember-me .form-check-input:checked:active:focus {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.bttn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bttn:hover {
+  background-color: var(--button-hover-color);
+}
+
+.bttn:focus {
+  outline: none;
+  box-shadow: none !important;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1000px) {
+  .sub {
+    max-width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .sub {
+    max-width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .sub {
+    max-width: 250px;
+  }
+}
